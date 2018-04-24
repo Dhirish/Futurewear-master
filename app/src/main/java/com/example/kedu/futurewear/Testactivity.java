@@ -45,7 +45,7 @@ public class Testactivity extends AppCompatActivity {
             startActivity(newintent);
             pds.close();
         }catch (Exception e){
-            e.printStackTrace();
+            e.getMessage();
         }
 
     }

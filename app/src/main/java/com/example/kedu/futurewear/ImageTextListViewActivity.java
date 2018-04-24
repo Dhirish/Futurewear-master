@@ -26,7 +26,7 @@ public class ImageTextListViewActivity extends Activity implements
     public static String[] descriptions = null;
 
     public static final Integer[] images = { R.drawable.jbl,
-            R.drawable.jbl, R.drawable.jbl, R.drawable.jbl };
+            R.drawable.jbl, R.drawable.jbl, R.drawable.jbl,R.drawable.jbl,R.drawable.jbl };
 
     ListView listView;
     List<RowItem> rowItems;
@@ -42,7 +42,8 @@ public class ImageTextListViewActivity extends Activity implements
         initDescArray(product_list);
 
         rowItems = new ArrayList<RowItem>();
-        for (int i = 0; i < titles.length; i++) {
+        int length = titles.length;
+        for (int i = 0; i < product_list.size(); i++) {
             RowItem item = new RowItem(images[i], titles[i], descriptions[i]);
             rowItems.add(item);
         }
